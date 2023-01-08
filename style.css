@@ -121,23 +121,28 @@ body{
 
 /* see reviews/write reviews */
 .btnme{
-    display: inline;
+    display: inline !important;
     border:none;
-    margin-top: 2%;
-    margin-left: 2%;
-    text-align:center;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align:center !important;
     color: #39065d;
+    height: 50px !important;
     color: #b4b3bc !important;
     background-color: white;
+    font-size: 21px !important;
+    white-space: nowrap !important;
 }
-
+.rowus{
+    height: 50px !important;
+}
+.customcol{
+    width: 10px !important;
+    left:-20px;
+}
 .dot{
     margin-left: 0px!important;
     margin-right: 0px !important;
-}
-.write{
-    margin-left: 0px!important;
-
 }
 .dot:hover{
     cursor: default;
@@ -169,7 +174,7 @@ body{
 }
 
 .dropdown{
-    margin-left: 4%;
+    position: relative !important;
 }
 .dropdown-menu{
     background-color: #935CB7 !important;
@@ -200,10 +205,12 @@ body{
     width: 100%;
 }
 
-.row-video{
+.customvideo{
     background-color: transparent;
-    width:30%;display:block; position:relative; 
-    min-width: 140px;
+    width:100% !important;
+    left:0px !important;
+    display:block; 
+    position:relative;
 }
 
 
@@ -223,6 +230,7 @@ video {
 }
 
 .frame3{
+    display: none;
     margin-top: -2.27%;
     width:50%;
     height:100%;
@@ -289,6 +297,7 @@ video {
 }
 
 .frame4{
+    display: none;
     margin-top: -2.27%;
     width:40%;
     height:100%;
@@ -355,6 +364,7 @@ input::placeholder{
 
 
 .frame5{
+    display: none;
     margin-top: -2.27%;
     width:40%;
     height:100%;

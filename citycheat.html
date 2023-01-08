@@ -45,16 +45,25 @@
                 <div class="col-12 align-self-center">
                     <div class="beggining">CITYCHEAT</div>
                     <div class="frame2">
-                        
-                    </div>
-                    <div class="frame2">
-                        
-                        <button class="btn btnme see" role="button">See reviews</button>
-                        <button class="btn btnme dot">&#8226;</button>
-                        <button class="btn btnme write" role="button">Write review</button>
-                        
-                        <div class="row-4">
-                            <div class="dropdown">
+                        <div class="mt-4 row rowus">
+                             <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                                <div class="row">
+                                 <div class="col-xl-3 col-lg-5 col-md-5 col-5 d-flex justify-content-center  ">
+                                <button class="btn btnme" role="button">See reviews</button>
+                                 </div>
+                                 <div class="col-xl-2 col-lg-2 col-md-2 col-2 d-flex justify-content-center ">
+                                <button class="btn btnme dot">&#8226;</button>
+                                 </div>
+                                 <div class="col-xl-3 col-lg-5 col-md-5 col-5 d-flex justify-content-center  ">
+                                <button class="btn btnme" role="button">Write review</button>
+                                 </div>
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="row rowus">
+                            <div class="offset-4 col-3 offset-md-0 col-md-6">
+                                <div class="dropdown">
                                 <button class="btn dropdown-toggle custom-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Your county
                                 </button>
@@ -63,9 +72,11 @@
                                   <li><a class="dropdown-item" href="#">Arad</a></li>
                                   <li><a class="dropdown-item" href="#">Sibiu</a></li>
                                 </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="row-4">     
+                        <div class="row rowus">     
+                            <div class="offset-4 col-3 offset-md-0 col-md-6">
                             <div class="dropdown">
                                 <button class="btn custom-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     The location
@@ -77,7 +88,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row-4">
+                        </div>
+                        <div class="row rowus">
+                            <div class="offset-4 col-3 offset-md-0 col-md-6">
                             <div class="dropdown">
                                 <button class="btn custom-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     The destination
@@ -90,7 +103,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row-4">
+                        </div>
+                        <div class="row rowus">
+                            <div class="offset-4 col-5 offset-md-0 col-md-6">
                             <div class="transportation_icons">
                                 <i onclick="playCar()" class="fa fa-duotone fa-taxi" id="icon-taxi"></i>
                                 <i onclick="playTram()" class="fa fa-duotone fa-train-tram"  id="icon-tram"></i>
@@ -98,10 +113,14 @@
                                 <i onclick="playBus()" class="fa fa-duotone fa-bus"  id="icon-bus"></i>
                             </div>
                         </div>
-                        <div class="row-video">
-                            <video width=100% preload="auto" autoplay loop muted="muted" volume="0">
+                    </div>
+                    <!-- https://getbootstrap.com/docs/5.0/layout/grid/#sass -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3">
+                            <video class="customvideo" width=100% preload="auto" autoplay loop muted="muted" volume="0">
                                 <source src="./video/vehicles.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="frame4">
