@@ -20,6 +20,16 @@ body{
     height: 30px;
     position: relative;
 }
+.dropdown-menu{
+    background-color: #935CB7 !important;
+    color:#39065d !important;
+    z-index: 90!important;
+}
+
+.dropdown-item:hover {
+    background-color: #C288E7 !important;
+    color: white !important;
+}
 .ThirdBackground{
     width:80%;
     height:75%;
@@ -146,6 +156,12 @@ body{
         opacity: 1;
     }
 }
+.task{
+    text-align: center;
+}
+.downrow{
+    margin-top: 55px !important;
+}
 .uprow{
     margin-top:-100px !important;
 }
@@ -260,6 +276,8 @@ justify-content: center;
 margin-left:-10px !important;
 }
 .avatar{
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
     object-fit: cover;
     right:-20px;
     width: 55px;
@@ -283,6 +301,10 @@ opacity: 1;
 .avatar:hover{
     animation:spin 0.5s linear ;
 }
+
+@keyframes spin { 
+    100% {transform:rotate(360deg); } 
+}
 .name{
     position: relative;
     width: 100% !important;
@@ -292,6 +314,17 @@ opacity: 1;
     position: relative;
     width: 100% !important;
     overflow: hidden;
+}
+#dropdown_write_location{
+    text-align: left;
+    background-color: #935CB7 !important;
+    border-color: #935CB7 !important;
+}
+.fa-route{
+    color: cyan;
+}
+.fa-star{
+    color: cyan;
 }
 .stars{
     width: 100px;
@@ -303,6 +336,23 @@ opacity: 1;
     overflow: hidden;
     cursor: pointer !important;
 }
+
+.list-item{
+    text-align: center;
+    justify-content: center;
+    margin-top: 4%;
+    display: inline-block;
+    margin-left: 3.3%;
+    width: 20%;
+    border-style:solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39065d;
+    border-radius: 30px;
+}
+
+.checked{
+    color: cyan;
+}
 .rowus{height: 10px !important;}
 
 .logo{
@@ -311,7 +361,7 @@ opacity: 1;
     font-family: 'Urbanist', sans-serif;
     color:white !important;
     font-size: calc(12px + 1.3vw);
-    animation: show_loggo 7s;
+    animation: show_loggo 1s;
     transform: scale(1);
     z-index:9999;
     background-color: #340864;
@@ -327,7 +377,12 @@ opacity: 1;
     opacity: 0.7;
     transition: all ease 0.3s !important;
 }
-
+.btnme:focus{
+    color:#39065d !important;
+    text-decoration: none;
+    border-color: transparent !important;
+    font-weight: bold !important;
+}
 .btnme:hover{
     opacity: 1;
 }
@@ -353,7 +408,16 @@ opacity: 1;
     transform: scale(1.2);
 }
 
-
+#review{
+    padding: 0% 4% 22%  !important;
+    margin-left: 3.3% !important;
+    margin-top: 7% !important;
+    width: 93% !important;
+    background-color:#431084 !important;
+    color:white !important;
+    border-radius: 30px !important;
+    border-color: #431084 !important;
+}
 video {
     border-radius: 20px;
     border: #400F7F 3px solid;
@@ -379,4 +443,8 @@ video {
     color: white;
     border: 2px #400F7F solid;
     cursor: pointer;
+}
+
+.foot{
+    margin-top: 490px !important;
 }
