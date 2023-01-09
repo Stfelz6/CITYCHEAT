@@ -31,7 +31,7 @@
         <audio id="tram">
             <source src="./sounds/tram (mp3cut.net).mp3" type="audio/mpeg">
         </audio>
-
+        <div id="logomare" class="logomare">CITYCHEAT</div>
         <div class="row">
             <div class="col-12 col-md-3">
                 <div class="SecondaryBackground">
@@ -39,14 +39,10 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-12 col-md-3 justify-content-center d-flex">
-                            <p class="logo">CITYCHEAT</p>
+                            <p class="logo " >CITYCHEAT</p>
                         </div>
                     </div>
-                    <div class="row foot">
-        
-                        <div class=" col-lg-12 col-12 justify-content-center d-flex">
-                            <div class="footer">Made with &#10084; by Busuioc Eliza</div>
-                        </div>
+                    <div class="row mt-auto">
                     <div class="row mt-2">
                         <div class="col-12 col-md-3 justify-content-center d-flex">
                             <div id="ThirdBackground" class="ThirdBackground">
@@ -357,7 +353,7 @@
                                             <div class="col-lg-10 col-md-12 col-12">
                                                 <div class="row">
                                                     <div class="col-lg-11 offset-md-1 col-md-10 offset-1 col-10">
-                                                        <p class="task">Drag and drop the type of vehicle used</p>
+                                                        <p class="task">Press on the keyboard a digit from 1-4 to indicate the type of vehicle used</p>
                                                     </div>
                                                     <!-- <div class="offset-lg-3 col-lg-6 col-md-10 offset-1 col-10">
                                                         <p class="task">Drag and drop the type of vehicle used</p>
@@ -367,19 +363,22 @@
                                                     <div class="col-lg-11 offset-md-1 col-md-10 offset-1 col-10">
                                                         <div class="lists">
                                                             <div class="list-item" draggable="true">
-                                                                <p style="font-weight:bold"> 1</p>
+                                                                <p style="font-weight:bold" id="trainNo"> 1</p>
                                                                 <i class="fa fa-duotone fa-train-tram"  id="icon-tram"></i>
                                                                 <p class="vehicle first">Tram</p>
                                                             </div>
                                                             <div class="list-item" draggable="true">
+                                                                <p style="font-weight:bold" id="subwayNo"> 2</p>
                                                                 <i class="fa fa-duotone fa-train-subway"  id="icon-metro"></i>
                                                                 <p class="vehicle">Metro</p>
                                                             </div>
                                                             <div class="list-item" draggable="true">
+                                                                <p style="font-weight:bold" id="busNo"> 3</p>
                                                                 <i class="fa fa-duotone fa-bus"  id="icon-bus"></i>
                                                                 <p class="vehicle">Bus</p>
                                                             </div>
                                                             <div class="list-item" draggable="true">
+                                                                <p style="font-weight:bold" id="taxiNo"> 4</p>
                                                                 <i class="fa fa-duotone fa-taxi" id="icon-taxi"></i>
                                                                 <p class="vehicle">Taxi</p>
                                                             </div>
@@ -395,7 +394,9 @@
                                                     <div class="offset-lg-2 col-lg-10 offset-md-1 col-md-12 offset-1 col-12">
                                                         <div class="row mt-3">
                                                             <div class="offset-3 col-4 offset-lg-3 col-lg-5">
-                                                                <div class="btn_publish">Publish</div>
+                                                                <div>
+                                                                    <button class="btn_publish" onclick="finish()" id="finish"> Publish</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -405,6 +406,7 @@
                                      </div>
                                 </div>
                             </div>
+                            <div class="footer">Made with &#10084; by Busuioc Eliza</div>
                         </div>
                     </div>
                 </div>
@@ -704,6 +706,13 @@
               y.pause();
               w.play(); 
             } 
+            
+            function finish(){
+                var butfi = document.getElementById("finish");
+                butfi.style.backgroundColor="#935CB7";
+                butfi.style.color = "white";
+                butfi.innerHTML = "Published"
+            }
         </script>
         <script src="index.js"></script>
     </body>
